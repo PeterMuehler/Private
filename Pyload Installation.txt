@@ -1,0 +1,103 @@
+Step 1 
+
+Damit wir in Step 2 alle benötigten Pakete installieren können,
+müssen wir die sources.list erweitern.
+Dies können wir mit dem Editor nano bewerkstelligen.
+Die Zeile nach dem nano Kommando einfach am Ende der Datei einfügen.
+Speichern kann man mittels STRG + X (zum Beenden), worauf man gefragt wird,
+ob man speichern möchte.
+
+---
+
+nano /etc/apt/sources.list
+
+deb-src http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi
+
+apt-get update
+
+#####################################################################################
+Step 2 
+
+Damit wir pyLoad installieren können,
+benötigen wir zunächst ein paar Pakete.
+Hierbei handelt es sich primär um Python (bereits vorinstalliert)
+mit einigen Erweiterungen und Programmen zum Entpacken der runtergeladenen Dateien.
+
+---
+
+apt-get -y install liblept3
+
+apt-get -y install python python-crypto python-pycurl python-imaging tesseract-ocr zip unzip
+
+apt-get -y build-dep rar unrar-nonfree
+
+apt-get source -b unrar-nonfree
+
+dpkg -i unrar_4.1.4-1_armhf.deb
+
+rm -rf unrar_*
+
+#####################################################################################
+Step 3 
+
+Nun laden wir uns die aktuelle .DEB-Datei von Python in der Version cli herunter.
+Zum Zeitpunkt dieses Tutorials ist die Version 0.4.9 aktuell.
+Den aktuellen Downloadlink bekommst du unter http://pyload.org/download
+
+---
+
+wget http://download.pyload.org/pyload-cli-v0.4.9-all.deb
+
+#####################################################################################
+Step 4 
+
+Jetzt installieren wir pyLoad mittels dpkg und löschen anschließend die DEB-Datei.
+
+---
+
+dpkg -i pyload-cli-v0.4.9-all.deb
+
+rm pyload-cli-v0.4.9-all.deb
+
+#####################################################################################
+Step 5 
+
+Nun starten wir pyLoad erstmalig. Dabei werden einige Fragen zur Einrichtung gestellt,
+welche ihr beantworten müsst.
+
+---
+
+cd /usr/share/pyload
+
+./pyLoadCore.py
+
+#####################################################################################
+Step 6 (optional) 
+
+Damit wir nicht immer den Terminal offen lassen müssen
+um den pyLoad Downloadmanager laufen zu lassen, können wir diesen als Daemon starten.
+
+---
+
+pyLoadCore --daemon
+
+#####################################################################################
+Step 7 (optional; start on boot) 
+
+Wenn wir nun pyLoad noch mit dem Raspberry Pi automatisch starten lassen möchten,
+legen wir den Start des Daemons in eine Crontab.
+In der geöffneten Datei fügen wir folgende Zeile am Ende in eine neue Zeile ein
+und speichern mittels STRG + X und der Bestätigung, dass man wirklich speichern möchte.
+
+---
+
+crontab -e
+	
+@reboot pyLoadCore --daemon
+
+#####################################################################################
+Fertig!
+Der pyLoad Downloadmanager wurde installiert und ist nun eingerichtet.
+Wenn du in den Einstellungen während der Installation das Webinterface aktiviert hast,
+kannst du nun im Browser IP:8000 (IP durch die IP des Raspberry Pis ersetzen)
+öffnen und das Downloaden kann beginnen!

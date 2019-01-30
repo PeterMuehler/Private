@@ -1,0 +1,54 @@
+---Minidlna---
+________________________________________________________
+Startet DLNA-Server		service minidlna start
+					oder
+				/etc/init.d/minidlna start
+--------------------------------------------------------
+Stoppt DNLA Server		service minidlna stop
+					oder
+				/etc/init.d/minidlna stop
+--------------------------------------------------------
+Datenbank aktualisiern		minidlna -R
+--------------------------------------------------------
+startet DLNA-Server neu		/etc/init.d/minidlna restart
+--------------------------------------------------------
+unbekannter Befehl		ps -e |grep dlna
+
+
+---FTP-Server---
+________________________________________________________
+startet FTP-Server neu		service proftpd restart
+
+
+---TightVNC-Server---
+________________________________________________________
+starte VNC-Server 		vncserver :1
+--------------------------------------------------------
+beendet VNC-Server		vncserver -kill :1
+--------------------------------------------------------
+VNC-Server Passwort		123456
+--------------------------------------------------------
+angepasste Bildschioesse	vncserver :1 -geometry 1024x768 -depth 24
+
+
+
+---Temperatur auslesen---
+________________________________________________________
+gibt die Temperatur in XX,XXX Grad Celsius an
+        cat /sys/class/thermal/thermal_zone0/temp
+--------------------------------------------------------
+gibt die Temperatur in temp=XX Grad Celsius an
+	vcgencmd measure_temp
+
+---pyLoad---
+
+________________________________________________________
+Befehle zum Neustarten, ohne den Pi neu zu starten:
+	cd /usr/share/pyload
+	./pyLoadCore.py -q
+	./pyLoadCore.py --daemon
+
+
+
+
+
