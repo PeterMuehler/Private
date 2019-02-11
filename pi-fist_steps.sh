@@ -17,6 +17,8 @@ sudo apt install mc -y
 sudo apt install htop -y
 #Install xrdp to vonnect with mstsc
 sudo apt install xrdp -y
+#Creats new chortcut 'cls' to clear the screen
+cp /usr/bin/clear /usr/bin/cls
 
 ---
 
