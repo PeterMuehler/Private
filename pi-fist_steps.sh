@@ -4,7 +4,7 @@
 #update before to update the pi
 sudo apt update
 sudo apt dist-upgrade -y
-sudo autoremove -y
+sudo apt autoremove -y
 
 ---
 
@@ -26,4 +26,4 @@ cp /usr/bin/clear /usr/bin/cls
 #update after all programs are installed
 sudo apt update
 sudo apt dist-upgrade -y
-sudo autoremove -y
+sudo apt autoremove -y
