@@ -23,6 +23,13 @@ cp /usr/bin/clear /usr/bin/cls
 
 ---
 
+#Create 'update' Program
+
+chmod +x update
+mv update /usr/bin
+
+---
+
 #update after all programs are installed
 sudo apt update
 sudo apt dist-upgrade -y
