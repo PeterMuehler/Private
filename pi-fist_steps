@@ -22,6 +22,8 @@ sudo apt install xrdp -y
 cp /usr/bin/clear /usr/bin/cls
 #Install neofetch. Like "system" in Windows
 apt install neofetch -y
+#Install GIT for Git-Repositories
+apt install git -y
 
 ---
 
