@@ -20,6 +20,8 @@ sudo apt install htop -y
 sudo apt install xrdp -y
 #Creats new chortcut 'cls' to clear the screen
 cp /usr/bin/clear /usr/bin/cls
+#Install neofetch. Like "system" in Windows
+apt install neofetch
 
 ---
 
