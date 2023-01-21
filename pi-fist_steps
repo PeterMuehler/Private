@@ -24,6 +24,8 @@ cp /usr/bin/clear /usr/bin/cls
 apt install neofetch -y
 #Install GIT for Git-Repositories
 apt install git -y
+#Install 'locate' fpr searching files and directories
+apt install locate -y
 
 ---
 
