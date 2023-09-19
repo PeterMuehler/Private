@@ -21,13 +21,15 @@ sudo apt install xrdp -y
 #Creats new chortcut 'cls' to clear the screen
 cp /usr/bin/clear /usr/bin/cls
 #Install neofetch. Like "system" in Windows
-apt install neofetch -y
+sudo apt install neofetch -y
 #Install GIT for Git-Repositories
-apt install git -y
+sudo apt install git -y
 #Install 'locate' fpr searching files and directories
-apt install locate -y
+sudo apt install locate -y
 #Install Net-Tools e.g. ifconfig
-apt install net-tools -y
+sudo apt install net-tools -y
+#Install Texteditor 'nano'
+sudo apt install nano
 
 ---
 
