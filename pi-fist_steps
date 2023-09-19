@@ -29,7 +29,7 @@ sudo apt install locate -y
 #Install Net-Tools e.g. ifconfig
 sudo apt install net-tools -y
 #Install Texteditor 'nano'
-sudo apt install nano
+sudo apt install nano -y
 
 ---
 
