@@ -27,7 +27,7 @@ apt install git -y
 #Install 'locate' fpr searching files and directories
 apt install locate -y
 #Install Net-Tools e.g. ifconfig
-apt install net-tools
+apt install net-tools -y
 
 ---
 
