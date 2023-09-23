@@ -30,6 +30,8 @@ sudo apt install locate -y
 sudo apt install net-tools -y
 #Install Texteditor 'nano'
 sudo apt install nano -y
+#Install Texteditor 'make'
+sudo apt install make -y
 
 ---
 
