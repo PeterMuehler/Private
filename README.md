@@ -9,3 +9,8 @@ Um die 'pi-fist_steps' Datei auszuführen, gehe bitte wie folgt vor:</br>
 <li>chmod +x pi-fist_steps<br>
 <li>./pi-fist_steps
 </ul>
+<br>
+oder einfach:
+<ul>
+<li>bash pi-fist_steps
+</ul>
