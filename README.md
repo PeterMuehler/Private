@@ -12,5 +12,5 @@ Um die 'pi-fist_steps' Datei auszuführen, gehe bitte wie folgt vor:</br>
 <br>
 oder einfach:
 <ul>
-<li>bash pi-fist_steps
+<li>bash linux-fist_steps
 </ul>
