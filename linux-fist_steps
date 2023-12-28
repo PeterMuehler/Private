@@ -33,7 +33,7 @@ sudo apt install nano -y
 #Install Texteditor 'make'
 sudo apt install make -y
 #Install tools like 'ping'
-apt install iputils-ping -y
+sudo apt install iputils-ping -y
 
 ---
 
