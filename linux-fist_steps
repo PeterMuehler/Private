@@ -37,7 +37,7 @@ sudo apt install iputils-ping -y
 #Install VLC Media Player
 apt install vlc -y
 #Install dhclient for ipconfig /release etc.
-apt install isc-dhcp-client
+apt install isc-dhcp-client -y
 
 ---
 
