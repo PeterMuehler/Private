@@ -1,0 +1,3 @@
+#!/bin/sh
+#Information to update Proxmox Nin Subscription
+#GUI > click your prox name > Repositories > Disable entries that say Enterprise > Add > [Click OK if you get the popup] > Dropdown: No-subscription > Add
