@@ -14,5 +14,7 @@ oder einfach:
 <ul>
 <li>bash linux-fist_steps
 </ul>
-Es get auch: 
-sudo mkdir -p /Sachen && cd /Sachen && echo "Sachen erstellt" && pwd && sudo git clone https://github.com/PeterMuehler/Private && cd Private && ls -la && echo "Repo fertig geladen" && sudo chmod +x linux-first_steps && sudo ./linux-first_steps
+Es get auch:</br>
+<ul>
+<li><span style="color:green","font-family:Papyrus>sudo mkdir -p /Sachen && cd /Sachen && echo "Sachen erstellt" && pwd && sudo git clone https://github.com/PeterMuehler/Private && cd Private && ls -la && echo "Repo fertig geladen" && sudo chmod +x linux-first_steps && sudo ./linux-first_steps</span></li>
+</ul>
