@@ -18,3 +18,8 @@ Es get auch:</br>
 <ul>
 <li><span style="color:green","font-family:Papyrus>sudo mkdir -p /Sachen && cd /Sachen && pwd && sudo git clone https://github.com/PeterMuehler/Private && cd Private && ls -la && sudo chmod +x linux-first_steps && sudo ./linux-first_steps</span></li>
 </ul>
+</ul>
+Oder aicj (ohne sudo):</br>
+<ul>
+<li><span style="color:green","font-family:Papyrus>mkdir -p /Sachen && cd /Sachen && pwd && git clone https://github.com/PeterMuehler/Private && cd Private && ls -la && chmod +x linux-first_steps && ./linux-first_steps</span></li>
+</ul>
